@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision — Элитная недвижимость Москвы</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/modals.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Прелоадер -->
+  <div id="preloader">
+    <h1>Vision</h1>
+  </div>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="modal-request">
+    <div class="modal-content">
+      <button class="close-btn" onclick="document.getElementById('modal-request').classList.remove('active')">&times;</button>
+      <h3>Оставить заявку</h3>
+      <form id="modal-form">
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="tel" name="phone" placeholder="Телефон" required />
+        <textarea name="message" placeholder="Сообщение" required></textarea>
+        <button type="submit" class="btn ripple">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Шапка -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Vision</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="properties.html">Объекты</a></li>
+          <li><a href="testimonials.html">Отзывы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <a href="#" class="btn contact-btn" onclick="document.getElementById('modal-request').classList.add('active')">Связаться</a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero-секция -->
+  <section id="hero">
+    <div class="animated-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="headline">
+        <span>Недвижимость</span>
+        <span>Премиум-класса</span>
+        <span>в Москве</span>
+      </h1>
+      <a href="#" class="btn glass-btn ripple" onclick="document.getElementById('modal-request').classList.add('active')">Оставить заявку</a>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title" data-animate>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service-card ripple" data-title="Покупка квартир">
+          <img src="https://images.unsplash.com/photo-1600585152930-70dfd3ec60ce?auto=format&fit=crop&w=800&q=80" alt="Покупка">
+          <h3>Покупка квартир</h3>
+          <p>Подбор элитной недвижимости в Москве с полной юридической поддержкой.</p>
+        </div>
+        <div class="service-card ripple" data-title="Продажа объектов">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Продажа">
+          <h3>Продажа объектов</h3>
+          <p>Маркетинг, оценка и выгодная реализация премиальных объектов.</p>
+        </div>
+        <div class="service-card ripple" data-title="Юридическое сопровождение">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Юридическая поддержка">
+          <h3>Юридическое сопровождение</h3>
+          <p>Контроль сделок, полное сопровождение, безопасность клиента.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <h3>Vision</h3>
+        <p>Элитная недвижимость. Москва.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">О нас</a>
+        <a href="properties.html">Объекты</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="footer-contact">
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@vision.ru</p>
+        <p>Москва, Рублёвское шоссе, д.1</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Vision, 2025 | <a href="#">Политика конфиденциальности</a> | <a href="#">Публичная оферта</a></p>
+    </div>
+  </footer>
+
+  <!-- Скрипт -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>

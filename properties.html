@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Объекты — Vision</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Vision</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="properties.html" class="active">Объекты</a></li>
+          <li><a href="testimonials.html">Отзывы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <a href="#" class="btn contact-btn" onclick="document.getElementById('modal-request').classList.add('active')">Связаться</a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Объекты -->
+  <section id="properties">
+    <div class="container">
+      <h2 class="section-title" data-animate>Объекты недвижимости</h2>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="квартира">Квартиры</button>
+        <button class="filter-btn" data-filter="дом">Дома</button>
+        <button class="filter-btn" data-filter="пентхаус">Пентхаусы</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="property-card" data-category="квартира">
+          <img src="https://images.unsplash.com/photo-1600585152930-70dfd3ec60ce?auto=format&fit=crop&w=800&q=80" alt="Квартира">
+          <h3>Квартира в Хамовниках</h3>
+          <p>120 м² • 90 млн ₽</p>
+          <a href="contact.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="property-card" data-category="дом">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Дом">
+          <h3>Вилла в Барвихе</h3>
+          <p>500 м² • 280 млн ₽</p>
+          <a href="contact.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="property-card" data-category="пентхаус">
+          <img src="https://images.unsplash.com/photo-1572120360610-d971b9c7b0e6?auto=format&fit=crop&w=800&q=80" alt="Пентхаус">
+          <h3>Пентхаус в Сити</h3>
+          <p>320 м² • 240 млн ₽</p>
+          <a href="contact.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="property-card" data-category="дом">
+          <img src="https://images.unsplash.com/photo-1550951538-969bcb0b5bff?auto=format&fit=crop&w=800&q=80" alt="Дом">
+          <h3>Усадьба в Жуковке</h3>
+          <p>800 м² • 410 млн ₽</p>
+          <a href="contact.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="property-card" data-category="квартира">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Квартира">
+          <h3>Лофт на Патриках</h3>
+          <p>110 м² • 87 млн ₽</p>
+          <a href="contact.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="property-card" data-category="пентхаус">
+          <img src="https://images.unsplash.com/photo-1598928506311-c55dedf94148?auto=format&fit=crop&w=800&q=80" alt="Пентхаус">
+          <h3>Панорамный пентхаус</h3>
+          <p>370 м² • 315 млн ₽</p>
+          <a href="contact.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <h3>Vision</h3>
+        <p>Элитная недвижимость. Москва.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">О нас</a>
+        <a href="properties.html">Объекты</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="footer-contact">
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@vision.ru</p>
+        <p>Москва, Рублёвское шоссе, д.1</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Vision, 2025 | <a href="#">Политика конфиденциальности</a> | <a href="#">Публичная оферта</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

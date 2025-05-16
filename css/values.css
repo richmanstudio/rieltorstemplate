@@ -1,0 +1,61 @@
+/* ===============================
+   Блок "Ценности компании"
+=============================== */
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Карточка ценности */
+.value-card {
+  background: linear-gradient(135deg, #f6f9ff, #eef2f9);
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: left;
+  border: 1px solid #dde4f0;
+  box-shadow: 0 0 0 transparent;
+  opacity: 0;
+  transform: scale(0.97);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.value-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(53, 111, 255, 0.1);
+}
+
+/* Стили заголовка и описания */
+.value-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark);
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+/* ===============================
+   Адаптив
+=============================== */
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+}

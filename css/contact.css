@@ -1,0 +1,83 @@
+/* ===============================
+   Контакты (форма + карта)
+=============================== */
+
+#contact {
+  padding: 100px 0;
+}
+
+#contact .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--dark);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Форма */
+#contact-form {
+  flex: 1 1 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--light);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  background: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(53, 111, 255, 0.15);
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+#contact-form .btn {
+  align-self: flex-start;
+}
+
+/* Карта */
+.contact-map {
+  flex: 1 1 480px;
+  min-height: 320px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ===============================
+   Адаптив
+=============================== */
+
+@media (max-width: 992px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  #contact-form,
+  .contact-map {
+    width: 100%;
+  }
+}

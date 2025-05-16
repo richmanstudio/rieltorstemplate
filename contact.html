@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — Vision</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Vision</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="properties.html">Объекты</a></li>
+          <li><a href="testimonials.html">Отзывы</a></li>
+          <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="subpage-hero">
+    <div class="container text-center">
+      <h1 class="section-title" data-animate>Связаться с нами</h1>
+      <p class="lead" data-animate>
+        Мы готовы ответить на любые ваши вопросы и предложить решение под ключ.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Map -->
+  <section id="contact" class="section">
+    <div class="container contact-wrapper">
+
+      <form id="contact-form" data-animate>
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="tel" name="phone" placeholder="Телефон" required />
+        <textarea name="message" placeholder="Сообщение" required></textarea>
+        <button type="submit" class="btn ripple">Отправить</button>
+      </form>
+
+      <div class="contact-map" data-animate>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5187276403093!2d37.41617847727509!3d55.75779027311271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548ebc3b39ad5%3A0x4e68b74cbcf632d7!2z0KDQtdGB0YLQtdC60YIg0KXQvNC10YDQtdC90LDRjyDQutC-0YDQvdC-0LLRgdC60LDRjyDRg9C7LiwgMSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMTI2Ng!5e0!3m2!1sru!2sru!4v1685782323414!5m2!1sru!2sru"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <h3>Vision</h3>
+        <p>Элитная недвижимость. Москва.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">О нас</a>
+        <a href="properties.html">Объекты</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="footer-contact">
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@vision.ru</p>
+        <p>Москва, Рублёвское шоссе, д.1</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Vision, 2025 | <a href="#">Политика конфиденциальности</a> | <a href="#">Публичная оферта</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

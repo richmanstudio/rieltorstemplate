@@ -1,0 +1,39 @@
+/* ===============================
+   404 Not Found Page
+=============================== */
+
+#error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+}
+
+.error-wrapper {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-code {
+  font-size: 7rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.error-desc {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+}

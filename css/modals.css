@@ -1,0 +1,140 @@
+/* ===============================
+   Общий модальный фон
+=============================== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+}
+
+.modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ===============================
+   Контент модального окна
+=============================== */
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: var(--shadow);
+  animation: zoomIn 0.4s ease;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+/* ===============================
+   Кнопка закрытия
+=============================== */
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  color: var(--gray);
+}
+
+/* ===============================
+   Форма в модалке
+=============================== */
+
+#modal-form input,
+#modal-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+#modal-form input:focus,
+#modal-form textarea:focus {
+  border-color: var(--accent);
+}
+
+#modal-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ===============================
+   Модальное окно услуги
+=============================== */
+
+#service-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1600;
+}
+
+#service-modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+#service-modal-content {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: var(--shadow);
+  animation: zoomIn 0.4s ease;
+}
+
+#service-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+#service-desc {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+/* ===============================
+   Адаптив
+=============================== */
+
+@media (max-width: 576px) {
+  .modal-content,
+  #service-modal-content {
+    padding: 1.5rem;
+  }
+
+  .modal-content h3,
+  #service-title {
+    font-size: 1.3rem;
+  }
+}

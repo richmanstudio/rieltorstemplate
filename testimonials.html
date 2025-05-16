@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Отзывы — Vision</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/testimonials.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Vision</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="properties.html">Объекты</a></li>
+          <li><a href="testimonials.html" class="active">Отзывы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+        <a href="#" class="btn contact-btn" onclick="document.getElementById('modal-request').classList.add('active')">Связаться</a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Отзывы -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title" data-animate>Отзывы клиентов</h2>
+
+      <div class="testimonial-slider" id="testimonial-slider">
+        <!-- Пример отзыва -->
+        <div class="testimonial-card" data-animate>
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Клиент">
+          <div class="stars">★★★★★</div>
+          <p>“Vision — это уровень. Сделка прошла быстро, с уважением и безопасно.”</p>
+          <h4>Екатерина М.</h4>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Клиент">
+          <div class="stars">★★★★★</div>
+          <p>“Подобрали дом в Барвихе за 3 дня. Спасибо за точность и сопровождение.”</p>
+          <h4>Андрей К.</h4>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Клиент">
+          <div class="stars">★★★★★</div>
+          <p>“Один из лучших опытов покупки квартиры. Всё на высшем уровне.”</p>
+          <h4>Мария П.</h4>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Клиент">
+          <div class="stars">★★★★★</div>
+          <p>“Vision — профессионалы. Отношение, сервис и качество — 🔥.”</p>
+          <h4>Илья С.</h4>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Клиент">
+          <div class="stars">★★★★★</div>
+          <p>“Пентхаус через Vision — это космос. Работают с душой.”</p>
+          <h4>Оксана Н.</h4>
+        </div>
+        <!-- Можно добавить ещё -->
+      </div>
+
+      <div class="counters" data-animate>
+        <span id="client-count">0</span>+ довольных клиентов
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <h3>Vision</h3>
+        <p>Элитная недвижимость. Москва.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">О нас</a>
+        <a href="properties.html">Объекты</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="footer-contact">
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@vision.ru</p>
+        <p>Москва, Рублёвское шоссе, д.1</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Vision, 2025 | <a href="#">Политика конфиденциальности</a> | <a href="#">Публичная оферта</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
